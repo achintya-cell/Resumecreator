@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docs</title>
+    <link rel="stylesheet" href="docs.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Docs</h2>
+        <div class="grid">
+            <div class="col1">
+                <ul>
+                    <li><a href="#">link1</a></li>
+                    <li><a href="#">link2</a></li>
+                    <li><a href="#">link3</a></li>
+                    <li><a href="#">link4</a></li>
+                </ul>
+            </div>
+            <div class="col2">
+                <p class="fade"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat neque recusandae, quae iure odit obcaecati laboriosam aperiam quaerat ipsama possimus? Aliquam, provident modi! </p>
+                <p class="fade"> Loum, dolor sit amet consectetur adipisicing elit. Fugiat neque recusandae, quae iure odit obcaecati laboriosam aperiam quaerat ipsam quibusdam illum placeat deserunt mollitia necessitatibus, tempora possimus? Aliquam, provident modi! </p>
+                <p class="fade"> Loremquae iure odit obcaecati laboriosam aperiam quaerat ipsam quibusdam illum placeat deserunt mollitia necessitatibus, tempora possimus? Aliquam, provident modi! </p>
+                <p class="fade"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat neque recusandae, quae iureossimus? Aliquam, provident modi! </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        let links = document.querySelectorAll('.col1 li');
+        let arr = document.querySelectorAll('.col2 p');
+
+        function update(e){
+            arr.forEach((element)=>{
+                element.style.display='none' ;
+            })
+            e.style.display='block';
+        }
+
+        for(let i=0; i<links.length ; i++){
+            links[i].addEventListener('click',(e)=>{
+                e.preventDefault();
+                update(arr[i]);
+            })
+        }
+
+    </script>
+</body>
+</html>

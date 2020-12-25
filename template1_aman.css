@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+     margin: 2px;
+     color:#59886b;
+ }
+ 
+ hr{
+     border-top: 1px dashed blue;
+ }
+ 
+ .info{
+     text-align: left;
+     width: 200px;
+ }
+ 
+ .container{
+     background-color: #f9f7cf;
+     margin: auto;
+     width: 800px;
+     border: 3px solid black;
+ }

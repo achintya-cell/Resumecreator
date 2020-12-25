@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data</title>
+    <link rel="stylesheet" href="index_aditya.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="form-h1">Enter your data and get your resume ready !!!</h1>
+
+      <div class="form">
+        <form action="">
+
+          <div>
+            <label for="name" class="label">Name: </label>
+            <input type="text"  class="form-control" name="UserName" id="name" required/>
+          </div>
+
+          <br />
+
+
+          <!-- <div>
+            <label for="fname" class="label">Father's Name: </label>
+            <input type="text" name="UserFatherName" id="fname" />
+          </div> -->
+
+          <br />
+
+          <div>
+            <label for="email" class="label">Email Address: </label>
+            <input type="email" class="form-control" name="UserEmail" id="email" required/>
+          </div>
+
+          <br />
+
+          <div class="grid">
+            <div>
+              <label for="MbNumber" class="label">Mobile No.: </label>
+              <input type="tel" class="form-control" name="Usermobile" id="MbNumber" required/>
+            </div>
+
+            <div>
+              <label for="dob" class="label">DOB: </label>
+              <input type="date" class="form-control" name="dob" id="dob" required/>
+            </div>
+          </div>
+
+          <br />
+
+          <div class="gender-radio">
+            <div>
+              <label for="gender" class="label">Gender: </label>
+            </div>
+            <div class="grid-option">
+              <div>
+                <input type="radio" name="UserGender" id="gender-m" required/>
+                <label for="gender-m">Male </label>
+              </div>
+              <div>
+                <input type="radio" name="UserGender" id="gender-f" required/>
+                <label for="gender-f">Female</label>
+              </div>
+              <div>
+                <input type="radio" name="UserGender" id="gender-o" required/>
+                <label for="gender-o">Other</label>
+              </div>
+            </div>
+          </div>
+
+          <br />
+
+          <div>
+            <label for="addr" class="label">Address: </label>
+            <input type="email" class="form-control" name="address" id="addr" required/>
+          </div>
+
+          <br />
+
+          <div class="grad-radio">
+            <div>
+              <label for="grad" class="label">GRADUATION IN: </label>
+            </div>
+            <div class="grid-option">
+              <div>
+                <input type="radio" name="Graduation" id="grad-1" required/>
+                <label for="grad-1">B-Tech</label>
+              </div>
+              <div>
+                <input type="radio" name="Graduation" id="grad-2" required/>
+                <label for="grad-2">B-Sc </label>
+              </div>
+            </div>
+          </div>
+
+          <br />
+
+          <div class="branch-radio">
+            <div>
+              <label for="branch" class="label">Branch: </label>
+            </div>
+            <div class="grid-option">
+              <div>
+                <input type="radio" name="UserBranch" id="branch-1" required/>
+                <label for="branch-1">CSE</label>
+              </div>
+              <div>
+                <input type="radio" name="UserBranch" id="branch-2" required/>
+                <label for="branch-2">IT </label>
+              </div>
+              <div>
+                <input type="radio" name="UserBranch" id="branch-3" required/>
+                <label for="branch-3">CE </label>
+              </div>
+              <div>
+                <input type="radio" name="UserBranch" id="branch-4" required/>
+                <label for="branch-4">ME </label>
+              </div>
+              <div>
+                <input type="radio" name="UserBranch" id="branch-5" required/>
+                <label for="branch-5">EE </label>
+              </div>
+            </div>
+          </div>
+
+          <br />
+
+          <div>
+            <label for="college" class="label">College/University Name: </label>
+            <input type="text" class="form-control" name="UserCollege" id="college" required/>
+          </div>
+
+          <br />
+
+          <div>
+            <label for="Obj" class="label">Objective: </label>
+            <textarea name="Object" id="Obj" required></textarea>
+          </div>
+
+          <br/>
+
+          <div>
+            <label for="qual" class="label">Qualifications: </label>
+            <textarea name="Qual" id="qual" required></textarea>
+          </div>
+
+          <br/>
+
+          <div>
+            <label for="Skills" class="label">Skills: </label>
+            <textarea name="Skills"id="Skills" required></textarea>
+          </div>
+
+          <br />
+
+          <div>
+            <label for="WorkExp" class="label">Work Experience: </label>
+            <textarea name="WorkExperience" id="WorkExp" required></textarea>
+          </div>
+
+          <br />
+
+          <div class="btn-grp flex">
+            <button type="submit" value="Submit Now" class="btn">Submit</button>
+            <button type="reset" value="Reset Now" class="btn">Reset</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

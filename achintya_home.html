@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumecreator</title>
+    <link rel="stylesheet" href="achintya_home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="brand-title"> Resumecreator </div>
+
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="achintya_home.html">Home</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <!-- <div class="search">
+                <input type="text" class="form-control" id="find" placeholder="Search">
+            </div> -->
+        </div>
+    </nav>
+
+    <div class="carousel">
+        <div class="text">
+            <h2>Now build your own resumes !!!</h2>
+            <p>Use the templates build by our professional team members to get your dream jobs.And see your chances of getting hired by your dream companies.Create My Resume</p>
+            <div class="get-started">
+                <a href="index_aditya.html" traget_="blank">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="intro">
+        <span class="line"></span>
+        <span class="intro-text">Templates</span>
+        <span class="line"></span>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <a href="templ_achintya.html">
+                <img src="temp1.jpg" alt="Loading">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab id eaque dolor nulla harum  deserunt placeat modi.</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="template_aditya.html">
+                <img src="temp2.jpg" alt="Loading....">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab id eaque dolor nulla harum repellendus maxime ut deserunt placeat modi.</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="template1_aman.html">
+                <img src="temp3.jpg" alt="Loading....">
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab id eaque dolor</p>
+            </a>
+        </div>
+        <div class="card">
+            <img src="plus.png" alt="">
+            <p>More</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="title">Resumecreator</div>
+            <p class="title">Copyright&copy; 2020</p>
+            <div class="social">
+                <a href="#"><img src="facebook.png"></img></a>
+                <a href="#"><img src="twitter.png"></img></a>
+                <a href="#"><img src="instagram.png"></img></a>
+                <a href="#"><img src="linkedin.png"></img></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const toggleButton = document.querySelector('.toggle-button');
+        const navbarLinks = document.querySelector('.navbar-links');
+        const date = document.querySelector('.container p.title');
+        let today = new Date();
+
+        toggleButton.addEventListener('click',()=>{
+            navbarLinks.classList.toggle('active');
+        });
+
+        date.innerHTML = `Copyright&copy; ${today.getFullYear()}`;
+    </script>
+</body>
+</html>
